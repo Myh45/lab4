@@ -1,3 +1,4 @@
+import random
 i=0
 list=[1,2,3]
 print(sum(i for i in list))
@@ -36,5 +37,9 @@ dict_123 = {v: k for k, v in dict_abc.items()}
 print(dict_abc)
 print(dict_123)
 
+tuplSurname='Mych','Yurts','Felyk'
+print(tuplSurname)
+tupNum=tuple(random.randrange(1,100) for i in range(3))
+print(tupNum)
 
 
