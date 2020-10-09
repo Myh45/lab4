@@ -39,7 +39,9 @@ print(dict_123)
 
 tuplSurname='Mych','Yurts','Felyk'
 print(tuplSurname)
-tupNum=tuple(random.randrange(1,100) for i in range(3))
-print(tupNum)
+tuplNum=tuple(random.randrange(1,100) for i in range(3))
+print(tuplNum)
+dictStud=dict(zip(tuplSurname,tuplNum))
+print(dictStud)
 
 
