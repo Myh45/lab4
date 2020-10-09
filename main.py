@@ -11,22 +11,30 @@ print(a)
 for i in range(4):
     print(' '.join(map(str,a[i])))
 
-print()
+print("1:")
 a = [[ i for j in range(6)] for i in range(5)]
 for i in a:
  print (i)
 
-print()
+print("2:")
 a = [[ j for j in range(6)] for i in range(5)]
 for i in a:
  print (i)
 
-print()
+print("3:")
 a = [[i+j for j in range(5)] for i in range(4)]
 for i in a:
     print(i)
 
-print()
-a = [[ j%10 for j in range(5)] for i in range(4)]
+print("4:")
+a = [[(j+i)%2 for j in range(5)] for i in range(4)]
 for i in a:
  print (i)
+
+dict_abc = {'a': 1, 'b': 2, 'c': 3, 'd': 3}
+dict_123 = {v: k for k, v in dict_abc.items()}
+print(dict_abc)
+print(dict_123)
+
+
+
